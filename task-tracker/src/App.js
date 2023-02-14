@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header"; //custom component
 
 function App() {
+  const name = "Shafiq";
+  const x = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* <h1>Hellow {x ? name : "Guest"}!</h1>
+      <h3>This is (3 + 5 = {3 + 5})</h3>
+      <h2>this is h2</h2> */}
+      {/* custom component is called below */}
+      {/* <Header title="custom props"/> */}
+      <Header/>
+      {/* passing props to Components */}
     </div>
   );
 }
